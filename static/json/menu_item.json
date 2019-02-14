@@ -1,0 +1,32 @@
+[
+    {
+        "icon":"static/icons/draw_measure.png",
+        "name":"Draw and Measure",
+        "route":""
+    },
+    {
+        "icon":"static/icons/unit_conversion.png",
+        "name":"Unit Conversion",
+        "route":"/calculator"
+    },
+    {
+        "icon":"static/icons/tax_rate.png",
+        "name":"Tax Rate",
+        "route":""
+    },
+    {
+        "icon":"static/icons/capital_tax_rate.png",
+        "name":"Capital Tax Rate",
+        "route":""
+    },
+    {
+        "icon":"static/icons/local_unit_maps_new.png",
+        "name":"Local Unit Maps",
+        "route":""
+    },
+    {
+        "icon":"static/icons/find_your_office.png",
+        "name":"Find Your Office",
+        "route":""
+    }
+]
