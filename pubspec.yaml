@@ -74,6 +74,7 @@ flutter:
     - static/icons/office_details_new.png
     - static/icons/faq_new.png
     - static/icons/instagram.png
+    - static/icons/download_new.png
     - static/icons/twitter.png
     - static/icons/facebook.png
 

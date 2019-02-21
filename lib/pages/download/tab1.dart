@@ -6,7 +6,7 @@ class DownloadTab1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: new Column(
+      child: new ListView(
         children: <Widget>[
 
           new Container(
@@ -17,12 +17,13 @@ class DownloadTab1 extends StatelessWidget {
                 fillColor: Color.fromRGBO(237, 240, 255, 1),
                 prefixIcon: Icon(Icons.search),
                 filled: true,
-                hintText: "Search news ...",
+                hintText: "Search documents ...",
                 border: InputBorder.none,
               ),
               onChanged: null,
             ),
           ),
+
 
           new Container(
             height: 500,
@@ -44,29 +45,33 @@ class DownloadTab1 extends StatelessWidget {
 
                         child: new Column(
                           children: <Widget>[
-                            new  ListTile(
+
+                                new  ListTile(
 
 
-                              title: new Text(listitem[index]["title"]),
-                              trailing: new RaisedButton(
-                                  onPressed: () async {
-                                    var url = listitem[index]["url"];
+                                  title: new Text(listitem[index]["title"]),
+                                  trailing: new RaisedButton(
+                                      onPressed: () async {
+                                        var url = listitem[index]["url"];
 
-                                    if (await canLaunch(url)) {
+                                        if (await canLaunch(url)) {
 
-                                      await launch(url, forceWebView: false, forceSafariVC: true);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
-                                  },
-                                  child: new Icon(Icons.file_download)),
-                              subtitle: new Text(listitem[index]["subtitle"]),
-                              leading: new Icon(Icons.picture_as_pdf),
+                                          await launch(url, forceWebView: false, forceSafariVC: true);
+                                        } else {
+                                          throw 'Could not launch $url';
+                                        }
+                                      },
+                                      child: new Image.asset('static/icons/download_new.png')),
+                                  // subtitle: new Text(listitem[index]["subtitle"]),
+                                  leading: new Icon(Icons.picture_as_pdf),
+                                ),
+                                new Padding(padding: EdgeInsets.all(5),)
+                              ],
                             ),
-                       //     new Padding(padding: EdgeInsets.all(5)),
-                          ],
 
-                        ),
+
+                       //     new Padding(padding: EdgeInsets.all(5)),
+
 
 
                       );

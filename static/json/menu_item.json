@@ -22,7 +22,7 @@
     {
         "icon":"static/icons/local_unit_maps_new.png",
         "name":"Local Unit Maps",
-        "route":""
+        "route":"/download"
     },
     {
         "icon":"static/icons/find_your_office.png",
