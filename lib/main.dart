@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hamrobhumi/pages/download/download.dart';
+import 'package:hamrobhumi/pages/map/map.dart';
 import 'pages/about/about.dart';
 import 'pages/home.dart';
 import 'pages/links/links.dart';
@@ -30,6 +31,7 @@ void main() {
       '/priorityprojetcs': (BuildContext context) => new PriorityProjects(),
       '/feedback': (BuildContext context) => new FeedBack(),
       '/videos': (BuildContext context) => new Videos(),
+      '/findyouroffice': (BuildContext context) => new MapPage(),
     },
     title: "हाम्रो भूमी",
     theme: new ThemeData(

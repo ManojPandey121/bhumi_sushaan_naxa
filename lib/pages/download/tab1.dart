@@ -6,7 +6,81 @@ class DownloadTab1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: new FutureBuilder(
+      child: new Column(
+        children: <Widget>[
+
+          new Container(
+            padding: EdgeInsets.all(10),
+            child: new TextField(
+              controller: null,
+              decoration: new InputDecoration(
+                fillColor: Color.fromRGBO(237, 240, 255, 1),
+                prefixIcon: Icon(Icons.search),
+                filled: true,
+                hintText: "Search news ...",
+                border: InputBorder.none,
+              ),
+              onChanged: null,
+            ),
+          ),
+
+          new Container(
+            height: 500,
+            width: (MediaQuery.of(context).size.width),
+            child: new FutureBuilder(
+                future: DefaultAssetBundle
+                    .of(context)
+                    .loadString('static/json/download/tab1.json'),
+                builder: (context, snapshot) {
+                  var listitem = json.decode(snapshot.data.toString());
+                  return new ListView.builder(
+
+                    itemCount: listitem.length,
+                    itemBuilder: (BuildContext covariant, int index) {
+                      return new Container(
+
+                        padding: EdgeInsets.all(5),
+                      //  color: Color.fromRGBO(237, 240, 255, 1),
+
+                        child: new Column(
+                          children: <Widget>[
+                            new  ListTile(
+
+
+                              title: new Text(listitem[index]["title"]),
+                              trailing: new RaisedButton(
+                                  onPressed: () async {
+                                    var url = listitem[index]["url"];
+
+                                    if (await canLaunch(url)) {
+
+                                      await launch(url, forceWebView: false, forceSafariVC: true);
+                                    } else {
+                                      throw 'Could not launch $url';
+                                    }
+                                  },
+                                  child: new Icon(Icons.file_download)),
+                              subtitle: new Text(listitem[index]["subtitle"]),
+                              leading: new Icon(Icons.picture_as_pdf),
+                            ),
+                       //     new Padding(padding: EdgeInsets.all(5)),
+                          ],
+
+                        ),
+
+
+                      );
+                    },
+                  );
+                }),
+          ),
+
+
+
+        ],
+      ),
+
+     /* child: new FutureBuilder(
           future: DefaultAssetBundle
               .of(context)
               .loadString('static/json/download/tab1.json'),
@@ -37,7 +111,7 @@ class DownloadTab1 extends StatelessWidget {
                 );
               },
             );
-          }),
+          }),*/
     );
   }
 }

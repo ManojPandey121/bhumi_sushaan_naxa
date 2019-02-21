@@ -40,6 +40,7 @@ flutter:
     - static/images/length.jpg
     - static/images/plotter.jpg
     - static/json/menu_item.json
+    - static/json/news/news.json
     - static/json/download/tab1.json
     - static/json/download/tab2.json
     - static/json/download/tab3.json
@@ -72,6 +73,9 @@ flutter:
     - static/icons/main_services_new.png
     - static/icons/office_details_new.png
     - static/icons/faq_new.png
+    - static/icons/instagram.png
+    - static/icons/twitter.png
+    - static/icons/facebook.png
 
 
 

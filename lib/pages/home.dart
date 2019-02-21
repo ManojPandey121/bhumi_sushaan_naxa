@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:hamrobhumi/pages/news/home_news.dart';
 import 'package:hamrobhumi/pages/news/news_list.dart';
 
 import 'news/news.dart';
@@ -8,15 +9,17 @@ import 'faq/faq.dart';
 import 'mainservices/mainservices.dart';
 import 'news/newsdetails.dart';
 
-
 class HomePage extends StatelessWidget {
-  List data;
+  // List data;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build (BuildContext context) {
     return new Column(
       children: <Widget>[
-        new AnimatedTxt(),
+        //new AnimatedTxt(),
+
+        new HomeNews(),
+
         new FutureBuilder(
           future: DefaultAssetBundle.of(context)
               .loadString('static/json/menu_item.json'),
@@ -180,53 +183,20 @@ class HomePage extends StatelessWidget {
 
 class AnimatedTxt extends StatefulWidget {
   @override
-  _AnimatedTxtState createState() => _AnimatedTxtState();
+  _AnimatedTxtState createState () => _AnimatedTxtState();
 }
 
 class _AnimatedTxtState extends State<AnimatedTxt>
     with TickerProviderStateMixin {
-  Animation<int> _characterCount;
 
-  int _stringIndex;
-  static const List<String> _kStrings = const <String>[
-    'एक सय रुपैयामा श्रीमान श्रीमतीको नाममा संयुक्त जग्गाधनी दर्ता प्रमाण पूर्जा बनाउने प्राबधानबाट लाभ लियौ ।',
-    'महिलाको नाममा रजिस्त्रेशन्  लिखत् पास् गर्दा रजिस्त्रेशन् शुल्कमा २५ देखि ५० प्रतिशतसम्म छुत हुने प्राबधानबात लाभ लियौ।',
-  ];
-
-  String get _currentString => _kStrings[_stringIndex % _kStrings.length];
-
-  void _animate() async {
-    AnimationController controller = new AnimationController(
-      duration: const Duration(milliseconds: 4000),
-      vsync: this,
-    );
-    setState(() {
-      _stringIndex = _stringIndex == null ? 0 : _stringIndex + 1;
-      _characterCount = new StepTween(begin: 0, end: _currentString.length)
-          .animate(
-              new CurvedAnimation(parent: controller, curve: Curves.easeIn));
-    });
-    await controller.forward();
-    controller.dispose();
-  }
 
   @override
-  void initState() {
-    super.initState();
-
-    _animate();
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build (BuildContext context) {
     return new Column(
       children: <Widget>[
         new Container(
           height: 40,
-
-//newly added container -2s
           padding: EdgeInsets.only(top: 5, right: 5, left: 5),
-
           child: new Row(
             children: <Widget>[
               new Expanded(
@@ -239,9 +209,6 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                   ),
                 ),
               ),
-
-              // new RaisedButton(color: Colors.blue.shade800,textColor: Colors.blue.shade800,onPressed: null),
-
               new InkWell(
                 child: new Text("\ Read All ",
                     textAlign: TextAlign.right,
@@ -250,8 +217,6 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                       //  fontWeight: FontWeight.w400,
                       color: Colors.blue.shade800,
                     )),
-                // child: new Icon(Icons.arrow_forward_ios),
-
                 onTap: () {
                   Navigator.push(
                       context,
@@ -259,7 +224,6 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                           builder: (context) => new NewsInListPage()));
                 },
               ),
-
               new InkWell(
                 child: new Icon(
                   Icons.arrow_forward_ios,
@@ -270,7 +234,7 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                   Navigator.push(
                       context,
                       new MaterialPageRoute(
-                          builder: (context) => new NewsPage()));
+                          builder: (context) => new NewsInListPage()));
                 },
               ),
             ],
@@ -280,7 +244,10 @@ class _AnimatedTxtState extends State<AnimatedTxt>
             padding: EdgeInsets.only(top: 1),
             height: 225,
             //MediaQuery.of(context).size.width /2,
-            width: MediaQuery.of(context).size.width,
+            width: MediaQuery
+                .of(context)
+                .size
+                .width,
             color: Colors.white10,
             // newly added horizintal Listview
             child: ListView(
@@ -296,16 +263,23 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                   },
                   child: new Container(
                     width: 200,
-                    height: MediaQuery.of(context).size.height,
+                    height: MediaQuery
+                        .of(context)
+                        .size
+                        .height,
                     child: new Column(
                       children: <Widget>[
-                        new Expanded(child:new Image.asset(
-                          'static/images/logo.png',
-                          width: MediaQuery.of(context).size.width,
-                          height: 100,
-                          alignment: Alignment.center,
-                        ), ),
-
+                        new Expanded(
+                          child: new Image.asset(
+                            'static/images/logo.png',
+                            width: MediaQuery
+                                .of(context)
+                                .size
+                                .width,
+                            height: 100,
+                            alignment: Alignment.center,
+                          ),
+                        ),
                         new Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
@@ -317,7 +291,6 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                               style: TextStyle(
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.w500,
-
                               ),
                             ),
                             Align(
@@ -354,17 +327,16 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                                 )),
                             new Padding(padding: EdgeInsets.all(5)),
                             new Text(
-
                               "Thank You for purchasing! you  arrived prepared to negotiate about naxa and its development  arrived prepared to negotiate about naxa and its development"
                                   " arrived prepared to negotiate about naxa and its development.",
                               softWrap: true,
                               maxLines: 2,
-
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
                                 fontSize: 12.0,
                               ),
                             ),
+                            new Padding(padding: EdgeInsets.only(bottom: 10)),
                           ],
                         )
                       ],
@@ -374,7 +346,7 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                 ),
                 new Padding(
                   padding:
-                      const EdgeInsets.only(right: 20, bottom: 1.0, left: 1.0),
+                  const EdgeInsets.only(right: 20, bottom: 1.0, left: 1.0),
                 ),
                 Container(
                   width: 200.0,
@@ -553,46 +525,8 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                   ),
                   color: Colors.white,
                 ),
-
-                /*   Container(
-                      width: 160.0,
-                      color: Colors.yellow,
-                    ),
-                    Container(
-                      width: 160.0,
-                      color: Colors.orange,
-                    ),*/
               ],
             )),
-        /* new Container(
-          margin: new EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
-          child: _characterCount == null
-              ? null
-              : new AnimatedBuilder(
-                  animation: _characterCount,
-                  builder: (BuildContext context, Widget child) {
-                    String text =
-                        _currentString.substring(0, _characterCount.value);
-                    return new Text(text,
-                        style: new TextStyle(
-                          color: Colors.blue[800],
-                        ));
-                  },
-                ),
-        ),
-            new Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            new MaterialButton(
-              color: Colors.blue.shade800,
-              onPressed: _animate,
-              child: Text(
-                "Next ->",
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-          ],
-        ),*/
         new Container(
           //color: Colors.blue.shade800,
           height: 40,
@@ -611,12 +545,10 @@ class _AnimatedTxtState extends State<AnimatedTxt>
                   ),
                 ),
               ),
-              // new RaisedButton(color: Colors.blue.shade800,textColor: Colors.blue.shade800,onPressed: null),
-
               new Container(
                 color: Colors.blue.shade800,
                 padding:
-                    EdgeInsets.only(left: 15, bottom: 20, top: 10, right: 5),
+                EdgeInsets.only(left: 15, bottom: 20, top: 10, right: 5),
                 alignment: Alignment.center,
                 child: new InkWell(
                   child: new Text(" Citizens Report ",
