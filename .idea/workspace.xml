@@ -8,8 +8,10 @@
     <list default="true" id="b0a2d697-5e04-4446-811d-59d36a71090d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/download/tab1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/download/tab1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/news/news_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/news/news_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/json/menu_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/menu_item.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/json/news/news.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/json/news/news.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -55,7 +57,7 @@
     <session id="171883488">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -63,50 +65,52 @@
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="dart" value="99" />
+          <entry key="dart" value="108" />
           <entry key="jpg" value="3" />
-          <entry key="json" value="12" />
+          <entry key="json" value="15" />
           <entry key="png" value="17" />
           <entry key="svg" value="1" />
-          <entry key="yaml" value="8" />
+          <entry key="yaml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Dart" value="99" />
+          <entry key="Dart" value="108" />
           <entry key="Image" value="20" />
-          <entry key="JSON" value="12" />
+          <entry key="JSON" value="15" />
           <entry key="SVG" value="1" />
-          <entry key="YAML" value="8" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dart" value="10543" />
-          <entry key="json" value="486" />
-          <entry key="yaml" value="179" />
+          <entry key="dart" value="10573" />
+          <entry key="json" value="487" />
+          <entry key="yaml" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Dart" value="10543" />
-          <entry key="JSON" value="486" />
-          <entry key="YAML" value="179" />
+          <entry key="Dart" value="10573" />
+          <entry key="JSON" value="487" />
+          <entry key="YAML" value="200" />
         </counts>
       </usages-collector>
     </session>
@@ -116,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/home.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-445">
-              <caret line="542" column="26" selection-start-line="542" selection-start-column="26" selection-end-line="542" selection-end-column="26" />
+            <state relative-caret-position="2074">
+              <caret line="131" column="57" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -126,10 +130,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pages/map/map.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/pages/map/findoffice.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/news/home_news.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="-5196">
+              <caret line="112" column="53" lean-forward="true" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="53" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -140,11 +162,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/news/news_list.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+            <state relative-caret-position="344">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/json/news/news.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -161,8 +192,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pages/download/tab1.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="2125">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -173,17 +204,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+            <state relative-caret-position="143">
+              <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/json/menu_item.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="510">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -199,8 +230,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Brow</find>
-      <find>Infor</find>
       <find>News</find>
       <find>Read</find>
       <find>scroll</find>
@@ -229,6 +258,8 @@
       <find>Ima</find>
       <find>Image</find>
       <find>Brows</find>
+      <find>O</find>
+      <find>Fi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -249,12 +280,12 @@
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/pages/home.dart" />
         <option value="$PROJECT_DIR$/lib/pages/download/tab2.dart" />
-        <option value="$PROJECT_DIR$/static/json/news/news.json" />
         <option value="$PROJECT_DIR$/lib/pages/news/home_news.dart" />
+        <option value="$PROJECT_DIR$/static/json/menu_item.json" />
+        <option value="$PROJECT_DIR$/lib/pages/download/tab1.dart" />
         <option value="$PROJECT_DIR$/lib/pages/news/news_list.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/lib/pages/download/tab1.dart" />
-        <option value="$PROJECT_DIR$/static/json/menu_item.json" />
+        <option value="$PROJECT_DIR$/static/json/news/news.json" />
       </list>
     </option>
   </component>
@@ -291,8 +322,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,13 +346,6 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="download" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bhumi_sushaasan_mob" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bhumi_sushaasan_mob" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bhumi_sushaasan_mob" type="b2602c69:ProjectViewProjectNode" />
@@ -361,6 +383,8 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +435,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.4977307" visible="true" weight="0.27540985" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.4977307" weight="0.27540985" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.3295082" />
@@ -457,13 +481,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/images/logo.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/map/findoffice.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/icons/download.png">
       <provider selected="true" editor-type-id="images" />
@@ -592,13 +609,6 @@
     <entry file="file://$PROJECT_DIR$/static/json/download/tab4.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/news/news.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/json/download/tab2.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -619,10 +629,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+    <entry file="file://$PROJECT_DIR$/lib/pages/home.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+        <state relative-caret-position="2074">
+          <caret line="131" column="57" selection-start-line="131" selection-start-column="57" selection-end-line="131" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/map/map.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/map/findoffice.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -635,38 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pages/download/tab1.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/news/home_news.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/news/news_list.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/pages/home.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-445">
-          <caret line="542" column="26" selection-start-line="542" selection-start-column="26" selection-end-line="542" selection-end-column="26" />
+        <state relative-caret-position="2125">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -675,8 +672,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/json/menu_item.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="510">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/news/home_news.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5196">
+          <caret line="112" column="53" lean-forward="true" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/pages/news/news_list.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/news/news.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
